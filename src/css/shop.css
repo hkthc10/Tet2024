@@ -1,0 +1,90 @@
+.head-nav .start,a:nth-child(3):hover~.fr {
+    left: 219px;
+    width: 53.36px;
+  }
+
+h1 {
+    color: #ccc;
+}
+
+.header-content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    list-style: none;
+    
+}
+
+.nav .nav-item .nav-link {
+    text-decoration: none;
+    padding: 15px 10px;
+    color: rgb(255, 251, 251);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.nav .nav-item:hover .nav-link {
+    color: rgb(35, 54, 199);
+}
+
+.account-box {
+    color: white;
+    font-size: 20px;
+}
+
+.account-box .function {
+    text-decoration: none;
+    padding: 15px 10px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.account-box .function-b:hover .function {
+    color: rgb(35, 54, 199);
+}
+
+.bg-footer {
+    width: auto;
+    padding: 100px;
+    background-color: black;
+    margin-top: 20px;
+}
+
+.example {
+    color: white;
+}
+
+
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    align-items: center;
+    padding: 12px 20px 12px 12px;
+  }
+
+  .game-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-item {
+    width: 20%;
+    margin: 40px 20px 0px 20px;
+    align-content: center;
+    color: white;
+}
+
+.game-item img {
+    max-width: 100%;
+    object-fit: fill;
+}
+
+.game-item .product-text {
+    padding: 10px;
+}

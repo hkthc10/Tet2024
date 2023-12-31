@@ -1,0 +1,142 @@
+.head-nav .start,a:nth-child(1):hover~.fr  {
+  left: 15px;
+  width: 71.97px;
+}
+
+.intro {
+  width: 100%;
+}
+
+.intro img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#games {
+  margin: 30px 0px 0px;
+  padding: 0px 40px;
+}
+
+.game-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 30px;
+  
+}
+
+.list-game {
+  justify-content: center;
+  padding: 20px 0px;
+  flex-wrap: wrap;
+}
+
+.game-section a {
+  text-decoration: none;
+  margin-left: 67px;
+}
+
+.border {
+  background: rgba(0,0,0,0.1);
+  padding: 120px;
+  box-sizing: border-box;
+}
+
+.banner-game {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.game-section a::after {
+  content: "→";
+  display: inline-block;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.category-game {
+  margin: 25px 37px;
+}
+
+.category-game img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-gt a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  justify-content: center;
+  display: flex;
+}
+
+.text-gt .icon {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 5px;
+  justify-content: center;
+  display: flex;
+}
+
+.ct {
+  font-weight: bold;
+  font-size: 12px;
+  background: #222;
+  padding: 1px 4px;
+  border-radius: 2px;
+  color: #ccc;
+  opacity: 0.8;
+}
+
+.foot {
+  background-color: #bb2424dc;
+
+}
+
+.foot-item {
+  padding: 30px 0 40px;
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 12px;
+}
+
+.foot-pt {
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  margin: -10px 0;
+  width: 800px;
+  min-width: 1024px;
+  align-items: center;
+}
+
+.foot-pt .imgfoot {
+  margin: 10px 30px ;
+  height: 36px;
+}
+
+.foot-pt p {
+  display: inline;
+}
+
+.foot-pt a {
+  text-decoration: none;
+  margin: 10px;
+  color: #ffffff;
+}
+
+.foot-pt img {
+  width: auto;
+  height: 100%;
+  min-width: 1px;
+  min-height: 1px;
+}
