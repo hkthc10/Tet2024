@@ -2,3 +2,23 @@
     left: 118px;
   width: 71.65px;
   }
+  .tt {
+    
+    padding: 70px 0;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+main {
+  margin-top: 75px;
+  margin: 75px 100px 10px 100px;
+}

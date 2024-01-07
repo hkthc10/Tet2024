@@ -17,6 +17,34 @@ h1 {
     
 }
 
+.sub {
+   width: 10%;
+   height: 10%;
+}
+
+.price {
+    float: left;
+}
+
+.shop-img {
+    object-fit: cover;
+}
+
+.content {
+    background-color: white;
+  padding-bottom: 20px;
+  margin: 10px 200px 10px;
+}
+
+.item-a {
+    text-decoration: none;
+    padding: 15px;
+}
+
+.search-box {
+    margin: 0px 30px;
+}
+
 .nav .nav-item .nav-link {
     text-decoration: none;
     padding: 15px 10px;
@@ -27,6 +55,24 @@ h1 {
 
 .nav .nav-item:hover .nav-link {
     color: rgb(35, 54, 199);
+}
+
+.border {
+    margin: 15px 0 0 15px;
+    border-radius: 10px;
+    width: 30%;
+    align-content: center;
+    
+}
+
+#add-btn {
+    cursor: pointer;
+}
+
+.border:hover {
+    background-color: #efefef;
+    border-style: solid;
+    border-width: 1px;
 }
 
 .account-box {
@@ -40,6 +86,26 @@ h1 {
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     font-size: 20px;
+}
+
+.pr-sh {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ee4d2d;
+    min-height: 10px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.product-text {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    justify-content: center;
+    display: flex;
 }
 
 .account-box .function-b:hover .function {
@@ -73,11 +139,18 @@ input[type=text] {
     justify-content: center;
 }
 
+.sales {
+    min-height: 15px;
+    margin: 15px;
+}
+
+.sub {
+    float: right;
+}
+
 .game-item {
-    width: 20%;
-    margin: 40px 20px 0px 20px;
-    align-content: center;
-    color: white;
+    padding: 20px 20px 0px 20px;
+    color: rgb(0, 0, 0);
 }
 
 .game-item img {

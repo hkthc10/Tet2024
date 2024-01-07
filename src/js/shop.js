@@ -4,43 +4,63 @@ const searchInput = document.querySelector('#search-game')
 const gameList = [
   {
     id: 1,
-    name: "Rust",
-    image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_0e646f1a70e5cb8eed00efef8adb9579d40d5b2e.600x338.jpg'
+    name: "Bánh Chưng",
+    image: '/src/img/banhchung.jpg',
+    price: "120₫"
   },
   {
     id: 2,
-    name: "NARAKA: BLADEPOINT",
-    image: 'https://cdn.akamai.steamstatic.com/steam/apps/1203220/capsule_616x353.jpg'
+    name: "Thịt kho Tàu",
+    image: '/src/img/thitkhotau.jpg',
+    price: "120₫"
   },
   {
     id: 3,
-    name: "Grim Dawn",
-    image: 'https://cdn.akamai.steamstatic.com/steam/apps/219990/capsule_616x353.jpg'
+    name: "Bánh tét",
+    image: '/src/img/thitkhotau.jpg',
+    price: "120₫"
   },
   {
     id: 4,
-    name: "Slay the Spire",
-    image: 'https://cdn.akamai.steamstatic.com/steam/apps/1203220/capsule_616x353.jpg'
+    name: "Củ cải ngâm nước mắm",
+    image: '/src/img/cucaingamtuong.jpg',
+    price: "120₫"
   },
   {
     id: 5,
-    name: "SOS OPS!",
-    image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_0e646f1a70e5cb8eed00efef8adb9579d40d5b2e.600x338.jpg'
+    name: "Lạp xưởng",
+    image: '/src/img/lapxuong.jpg',
+    price: "120₫"
   },
   {
     id: 6,
-    name: "Wolvesville",
-    image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_0e646f1a70e5cb8eed00efef8adb9579d40d5b2e.600x338.jpg'
+    name: "Chả lụa",
+    image: '/src/img/chalua.jpg',
+    price: "120₫"
   },
   {
     id: 7,
-    name: "Eternal Return",
-    image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_0e646f1a70e5cb8eed00efef8adb9579d40d5b2e.600x338.jpg'
+    name: "Canh măng",
+    image: '/src/img/canhmang.jpg',
+    price: "120₫"
   },
   {
     id: 8,
-    name: "Apex Legends™",
-    image: 'https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_0e646f1a70e5cb8eed00efef8adb9579d40d5b2e.600x338.jpg'
+    name: "Chả giò",
+    image: '/src/img/chagio.jpg',
+    price: "120₫"
+  },
+  {
+    id: 9,
+    name: "Dưa giá",
+    image: '/src/img/duagia.jpg',
+    price: "120₫"
+  },
+  {
+    id: 10,
+    name: "Canh khổ qua",
+    image: '/src/img/canhkhoqua.jpg',
+    price: "120₫"
   }
 ]
 function renderGameList(listGame) {
@@ -48,12 +68,25 @@ function renderGameList(listGame) {
 
   for (let i = 0; i < listGame.length; i++) {
     htmls += `
-        <div class="game-item">
-          <img src=${listGame[i].image}>
-          <div class="product-text">
-              <h2~>${listGame[i].name}</h2>
-              <p class="price">${listGame[i].price}</p>
-          </div>
+        <div class="border d-flex">
+          <a href="./shop.html" class="item-a">
+            <div class="game-item">
+              <img src=${listGame[i].image}>
+              <div class="product-text">
+                <div class"sales">
+                  <h2~>${listGame[i].name}</h2>
+                </div>  
+              </div>
+              <div class"sales"></div>
+            
+              <div class="pr-sh">
+                <p class="price">${listGame[i].price}</p>
+                <form class="sub">
+                  <button type="submit" id="add-btn"><img class="shop-img" src="./img/giohang.png" alt=""></button>
+                </form>
+              </div>
+            </div>
+          </a>
         </div>
       `
   }

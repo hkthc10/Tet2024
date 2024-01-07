@@ -20,7 +20,7 @@ function handleSignIn(event) {
         if (email == currentAccount.email && password == currentAccount.password) {
             alert("Đăng nhập thành công")
 
-            window.location.pathname = "/home.html";
+            window.location.pathname = "/src/home.html";
             return
         }
 

@@ -12,11 +12,6 @@
   object-fit: cover;
 }
 
-#games {
-  margin: 30px 0px 0px;
-  padding: 0px 40px;
-}
-
 .game-section {
   display: flex;
   align-items: center;
@@ -27,18 +22,16 @@
 
 .list-food {
   justify-content: center;
-  padding: 20px 0px;
+  padding: 25px 0px;
   flex-wrap: wrap;
 }
 
 .game-section a {
   text-decoration: none;
-  margin-left: 67px;
+  margin-left: 100px;
 }
 
 .border {
-  background: rgba(0,0,0,0.1);
-  padding: 120px;
   box-sizing: border-box;
 }
 
@@ -56,8 +49,16 @@
   text-decoration: none;
 }
 
+.game-category {
+  background-color: white;
+  padding-bottom: 20px;
+  margin: 10px 200px 10px;
+}
+
 .category-game {
   margin: 25px 37px;
+  width: 30%;
+  height: 20%;
 }
 
 .category-game img {
@@ -95,48 +96,17 @@
   opacity: 0.8;
 }
 
-.foot {
-  background-color: #bb2424dc;
-
+.more-border {
+  justify-content: center;
+  border-radius: 50%;
 }
 
-.foot-item {
-  padding: 30px 0 40px;
-  color: #ffffff;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 12px;
-}
-
-.foot-pt {
-  overflow: hidden;
-  display: flex;
-  flex-flow: column;
-  margin: -10px 0;
-  width: 800px;
-  min-width: 1024px;
-  align-items: center;
-}
-
-.foot-pt .imgfoot {
-  margin: 10px 30px ;
-  height: 36px;
-}
-
-.foot-pt p {
-  display: inline;
-}
-
-.foot-pt a {
+.more {
   text-decoration: none;
-  margin: 10px;
-  color: #ffffff;
+  border-radius: 20px;
+  justify-content: center;
+  padding: 15px 10px;
+  width: 10%;
+  background-color: #eeeeee;
 }
 
-.foot-pt img {
-  width: auto;
-  height: 100%;
-  min-width: 1px;
-  min-height: 1px;
-}
