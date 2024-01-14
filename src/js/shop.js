@@ -61,7 +61,67 @@ const gameList = [
     name: "Canh khổ qua",
     image: '/src/img/canhkhoqua.jpg',
     price: "120₫"
-  }
+  },
+  {
+    id: 11,
+    name: "Bắp bò kho mật mía",
+    image: '/src/img/duagia.jpg',
+    price: "120₫"
+  },
+  {
+    id: 12,
+    name: "Thịt heo ngâm mắm",
+    image: '/src/img/duagia.jpg',
+    price: "120₫"
+  },
+  {
+    id: 13,
+    name: "Tré",
+    image: '/src/img/duagia.jpg',
+    price: "120₫"
+  },
+  {
+    id: 14,
+    name: "Chả bò",
+    image: '/src/img/duagia.jpg',
+    price: "120₫"
+  },
+  {
+    id: 15,
+    name: "Bò thưng",
+    image: '/src/img/duagia.jpg',
+    price: "120₫"
+  },
+  {
+    id: 16,
+    name: "Gà luộc lá chanh",
+    image: '/src/img/duagia.jpg',
+    price: "120₫"
+  },
+  {
+    id: 17,
+    name: "Nem chua",
+    image: '/src/img/duagia.jpg',
+    price: "120₫"
+  },
+  {
+    id: 18,
+    name: "Tôm chua",
+    image: '/src/img/duagia.jpg',
+    price: "120₫"
+  },
+  {
+    id: 19,
+    name: "Bánh thuẫn",
+    image: '/src/img/duagia.jpg',
+    price: "120₫"
+  },
+  {
+    id: 20,
+    name: "Bánh in",
+    image: '/src/img/duagia.jpg',
+    price: "120₫"
+  },
 ]
 function renderGameList(listGame) {
   let htmls = "";
@@ -82,7 +142,7 @@ function renderGameList(listGame) {
               <div class="pr-sh">
                 <p class="price">${listGame[i].price}</p>
                 <form class="sub">
-                  <button type="submit" id="add-btn"><img class="shop-img" src="./img/giohang.png" alt=""></button>
+                  <button type="submit" id="add-btn" class="add-cart"><img class="shop-img" src="./img/giohang.png" alt=""></button>
                 </form>
               </div>
             </div>
@@ -100,11 +160,11 @@ renderGameList(gameList)
 function searchGames(searchString) {
 
   let foundGames = gameList.filter(function (game) {
-
+  
     return game.name.toLowerCase().includes(searchString.toLowerCase());
   })
 
-  renderGameList(foundGames)
+  renderGameList(foundGames) 
 }
 
 searchInput.addEventListener("input", function (event) {

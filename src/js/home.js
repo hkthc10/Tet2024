@@ -9,7 +9,7 @@ const foodList = [
     },
     {
         id: 2,
-        name: "Thịt kho nước dừa (Thịt kho Tàu)",
+        name: "Thịt kho nước dừa",
         image: '/src/img/thitkhotau.jpg'
     },
     {
@@ -46,7 +46,7 @@ function renderFoodList(listFood) {
         <div class="category-game">
           <a>
             <div class="border">
-              <a href="" class="banner-game">
+              <a href="/src/shop.html" class="banner-game">
                   <img src=${listFood[i].image}>
               </a>
               <div class="text-gt">

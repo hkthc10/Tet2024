@@ -52,13 +52,24 @@
 .game-category {
   background-color: white;
   padding-bottom: 20px;
-  margin: 10px 200px 10px;
+  margin: 50px 200px 50px;
+  border-radius: 10px;
 }
 
 .category-game {
-  margin: 25px 37px;
-  width: 30%;
-  height: 20%;
+  margin: 15px 30px 15px 30px;
+  padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    align-content: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.category-game:hover {
+  background-color: #efefef;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .category-game img {
@@ -74,6 +85,16 @@
   font-size: 16px;
   justify-content: center;
   display: flex;
+}
+
+.video {
+  width: 50%;
+  margin: 50px 200px;
+}
+.video iframe{
+  width: 1120px;
+  height: 600px;
+  border-radius: 10px;
 }
 
 .text-gt .icon {
