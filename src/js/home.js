@@ -1,6 +1,7 @@
 const foodContainer = document.querySelector('.list-food')
 const searchInput = document.querySelector('#search-game')
 
+
 const foodList = [
     {
         id: 1,
@@ -69,3 +70,5 @@ function renderFoodList(listFood) {
 }
 
 renderFoodList(foodList)
+
+

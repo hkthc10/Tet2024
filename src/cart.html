@@ -28,18 +28,18 @@
                     <div class="start fr"></div>
                 </div>
             </nav>
-            <div class="header-lr">
+            <div class="header-lr" id="user-action">
 
-                <a href="sign-in.html" class="lr-butt items-center d-flex" style="width:auto;">
-                    <span>Sign In</Span>
+                <a href="./sign-in.html" class="lr-butt items-center d-flex" style="width:auto;">
+                  <span>Sign In</Span>
                 </a>
                 <div class="lr-butt-h items-center d-flex">/</div>
-                <a href="sign-up.html" class="lr-butt items-center d-flex" style="width:auto;">
-                    <span>Sign Up</Span>
+                <a href="./sign-up.html" class="lr-butt items-center d-flex" style="width:auto;">
+                  <span>Sign Up</Span>
                 </a>
-
-
-            </div>
+        
+        
+              </div>
         </header>
         <!-- shopping cart -->
         <div class="shopping-cart">
@@ -47,10 +47,14 @@
             <div class="title">
                 Shopping Bag
             </div>
-            <div class="cart-in"></div>
+            
+            <div class="cart-in">
+                
+            </div>
 
             <form action="">
-                <button type="submit" id="add-btn" class="adds-cart">Order</button>
+                <button type="submit" class="clear-button button-in">Clear</button>
+                <button type="submit" id="add-btn" class="adds-cart button-in">Order</button>
             </form>
         </div>
         <!-- footer -->
@@ -91,41 +95,12 @@
         </footer>
     </div>
     <script src="./js/cart.js"></script>
+    <script src="./js/index.js"></script>
     <script type="text/javascript">
-        $('.minus-btn').on('click', function (e) {
-            e.preventDefault();
-            var $this = $(this);
-            var $input = $this.closest('div').find('input');
-            var value = parseInt($input.val());
-
-            if (value > 1) {
-                value = value - 1;
-            } else {
-                value = 0;
-            }
-
-            $input.val(value);
-
-        });
-
-        $('.plus-btn').on('click', function (e) {
-            e.preventDefault();
-            var $this = $(this);
-            var $input = $this.closest('div').find('input');
-            var value = parseInt($input.val());
-
-            if (value < 100) {
-                value = value + 1;
-            } else {
-                value = 100;
-            }
-
-            $input.val(value);
-        });
 
         $('.like-btn').on('click', function () {
             $(this).toggleClass('is-active');
-        });
+        }); 
     </script>
 </body>
 

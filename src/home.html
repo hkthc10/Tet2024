@@ -29,7 +29,7 @@
           <div class="start fr"></div>
         </div>
       </nav>
-      <div class="header-lr">
+      <div class="header-lr" id="user-action">
 
         <a href="./sign-in.html" class="lr-butt items-center d-flex" style="width:auto;">
           <span>Sign In</Span>
@@ -100,7 +100,14 @@
     </footer>
 
     <script src="./js/home.js"></script>
+    <script src="./js/index.js"></script>
 </body>
-
+<script>
+  const userAction = document.getElementById("user-action");
+  let accountLogin = JSON.parse(localStorage.getItem("account-login"));
+  if(accountLogin) {
+    userAction.innerHTML = accountLogin
+  }
+</script>
 
 </html>

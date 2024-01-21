@@ -7,7 +7,7 @@ header {
     z-index: 999;
     padding: 1px 0;
     background-color: rgb(237, 50, 50);
-    box-shadow: 0 3px 7px 0 rgba(0,0,0,0.35);
+    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
 }
 
 .head-nav {
@@ -19,7 +19,7 @@ header {
 }
 
 .fr {
-    position: absolute ;
+    position: absolute;
     z-index: 1;
     transition: all 0.3s ease-in-out 0s;
     background-color: #ff9335;
@@ -36,28 +36,28 @@ header {
 }
 
 .head-nav a:nth-child(2):hover~.fr {
-  left: 118px;
-  width: 71.65px;
+    left: 118px;
+    width: 71.65px;
 }
 
 .head-nav a:nth-child(3):hover~.fr {
-  left: 219px;
-  width: 53.36px;
+    left: 219px;
+    width: 53.36px;
 }
 
 .head-nav a:nth-child(4):hover~.fr {
-  left: 302px;
-  width: 69.11px;
+    left: 302px;
+    width: 69.11px;
 }
 
 .head-nav a:nth-child(5):hover~.fr {
-  left: 402px;
-  width: 60.36px;
+    left: 402px;
+    width: 60.36px;
 }
 
 .head-nav a:nth-child(6):hover~.fr {
-  left: 492px;
-  width: 90.36px;
+    left: 492px;
+    width: 90.36px;
 }
 
 .head-nav a:link {
@@ -142,7 +142,7 @@ h1 {
 .lr-butt-h {
     padding: 0 10px;
     color: #ffffff;
-    cursor: default ;
+    cursor: default;
     z-index: 999999;
 }
 
@@ -157,11 +157,11 @@ ul li a {
 
 .sub-nav {
     display: none;
-  position: absolute;
-  width: 140px;
-  background-color: #272626;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    position: absolute;
+    width: 140px;
+    background-color: #272626;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .sub-nav li a {
@@ -179,7 +179,9 @@ ul li a {
     transition: all 0.5s ease-in-out;
 }
 
-.sublist .sub-nav a:hover {background-color: rgba(17,17,17,0.75);}
+.sublist .sub-nav a:hover {
+    background-color: rgba(17, 17, 17, 0.75);
+}
 
 .sublist p:hover {
     color: #fff;
@@ -196,8 +198,8 @@ ul li a {
 }
 
 #menu div {
-    position:relative;
-    cursor:pointer;
+    position: relative;
+    cursor: pointer;
 }
 
 #menu div ul {
@@ -225,17 +227,40 @@ ul li a {
     background-color: #000000ee;
 }
 
-#menu div:hover ul, #navbar div.hover ul {
+#menu div:hover ul,
+#navbar div.hover ul {
     display: block;
     position: absolute;
     top: 66px;
-    left:0;
+    left: 0;
     margin: 0;
     padding: 0;
 }
 
-#menu div:hover li, #navbar div.hover li {
+#menu div:hover li,
+#navbar div.hover li {
     float: none;
     background-color: #272626;
 }
 
+#user-action {
+    align-items: center;
+    display: flex;
+}
+
+.username {
+    align-items: center;
+}
+
+.sign-out-button {
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: #000000;
+    border-color: #c5c5c5;
+}
+
+.sign-out-button:hover {
+    background-color: rgb(220, 220, 220);
+}
